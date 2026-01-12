@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "tubestampprod-127d5"
+  },
+  "targets": {
+    "tubestampprod-127d5": {
+      "hosting": {
+        "tubestampprod": [
+          "tubestampprod-127d5"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
