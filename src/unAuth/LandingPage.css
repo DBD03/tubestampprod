@@ -1,26 +1,21 @@
 .landing-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #212121;
   padding: 0;
 }
 
 .landing-content {
   text-align: center;
   padding: 40px 20px;
-  max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
+  width: 1200px;
 }
 
 .landing-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #333;
+  color: #ffffff;
   margin: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 @media (max-width: 768px) {

@@ -1,9 +1,10 @@
 .timestamp {
   padding: 4rem 2rem;
-  background: rgba(255, 255, 255, 0.95);
+  background: #1a1a1a;
   margin: 2rem 0;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid #303030;
 }
 
 .timestamp-container {
@@ -15,19 +16,65 @@
 .timestamp-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #333;
+  color: #ffffff;
   margin: 0 0 1rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .timestamp-description {
   font-size: 1.2rem;
-  color: #666;
-  margin: 0;
+  color: #aaaaaa;
+  margin: 0 0 2rem 0;
   line-height: 1.6;
+}
+
+.timestamp-upload-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.timestamp-upload {
+  position: relative;
+}
+
+.timestamp-file-input {
+  display: none;
+}
+
+.timestamp-file-label {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #303030;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.timestamp-file-label:hover {
+  background: #404040;
+  border-color: #505050;
+}
+
+.timestamp-generate-btn {
+  padding: 0.75rem 2rem;
+  background: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timestamp-generate-btn:hover {
+  background: #2563eb;
 }
 
 @media (max-width: 768px) {
@@ -42,5 +89,15 @@
 
   .timestamp-description {
     font-size: 1rem;
+  }
+
+  .timestamp-upload-section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .timestamp-file-label,
+  .timestamp-generate-btn {
+    width: 100%;
   }
 }

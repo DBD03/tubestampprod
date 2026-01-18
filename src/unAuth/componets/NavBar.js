@@ -6,7 +6,7 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <h2>TubeStamp</h2>
+          <h2><span className="navbar-logo-tube">Tube</span><span className="navbar-logo-stamp">Stamp</span></h2>
         </div>
         <ul className="navbar-menu">
           <li className="navbar-item">
@@ -16,7 +16,7 @@ function NavBar() {
             <a href="#features" className="navbar-link">Features</a>
           </li>
           <li className="navbar-item">
-            <a href="#about" className="navbar-link">About</a>
+            <a href="#about" className="navbar-link">Do More With Video</a>
           </li>
         </ul>
       </div>
